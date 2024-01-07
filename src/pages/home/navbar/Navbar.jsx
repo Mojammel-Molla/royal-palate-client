@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   const navLinks = (
     <>
-      <li className="font-bold text-base">
+      <li className="font-bold text-lg mr-3">
         <NavLink
           className={({ isActive }) =>
             isActive ? 'text-[#c7372d] underline' : ''
