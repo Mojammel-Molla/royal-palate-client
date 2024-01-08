@@ -32,10 +32,10 @@ const Footer = () => {
       <nav>
         <header className="footer-title">OPENING HOURS</header>
         <a className="font-bold text-base">
-          Mon - Fri : <span className="text-[#c7372d]">8am - 4pm</span>
+          Monday - Friday : <span className="text-[#c7372d]">8am - 4pm</span>
         </a>
         <a className="font-bold text-base">
-          Sat : <span>8am - 12 pm</span>
+          Saturday : <span className="text-[#c7372d]">8am - 12 pm</span>
         </a>
       </nav>
     </footer>
