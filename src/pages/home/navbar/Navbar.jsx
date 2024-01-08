@@ -25,6 +25,16 @@ const Navbar = () => {
       <li>
         <NavLink>Contact</NavLink>
       </li>
+      <li className="font-bold text-lg mr-3">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? 'text-[#c7372d] underline' : 'text-white'
+          }
+          to="/login"
+        >
+          Log In
+        </NavLink>
+      </li>
     </>
   );
   return (
