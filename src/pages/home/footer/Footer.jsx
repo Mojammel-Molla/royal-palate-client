@@ -1,3 +1,10 @@
+import {
+  FaFacebook,
+  FaInstagram,
+  FaPinterest,
+  FaTwitter,
+} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
@@ -38,6 +45,20 @@ const Footer = () => {
           <a className="font-semibold text-base">
             Saturday : <span className="text-[#c7372d]">8am - 12 pm</span>
           </a>
+          <div className="flex gap-3 text-2xl mt-2">
+            <a href="https://www.facebook.com">
+              <FaFacebook className=" hover:text-[#c7372d]" />
+            </a>
+            <a href="https://www.instagram.com">
+              <FaInstagram className=" hover:text-[#c7372d]" />
+            </a>
+            <a href="https://twitter.com">
+              <FaTwitter className=" hover:text-[#c7372d]" />
+            </a>
+            <a href="https://www.pinterest.com">
+              <FaPinterest className=" hover:text-[#c7372d]" />
+            </a>
+          </div>
         </nav>
       </footer>
       <footer className="footer footer-center p-4 border-t-2 bg-[#f4f1ea] text-base-content">
