@@ -50,6 +50,15 @@ const Register = () => {
                 className="input input-bordered"
               />
             </div>
+
+            <div className="form-control">
+              <input
+                {...register('photo', { required: true })}
+                type="file"
+                className="file-input file-input-bordered file-input-xs w-full max-w-md"
+              />
+            </div>
+
             <div className="form-control mt-6">
               <button
                 type="submit"
