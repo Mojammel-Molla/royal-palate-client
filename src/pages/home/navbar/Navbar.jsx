@@ -19,8 +19,15 @@ const Navbar = () => {
       <li>
         <NavLink>Orders</NavLink>
       </li>
-      <li>
-        <NavLink>Blogs</NavLink>
+      <li className="font-bold text-lg mr-3">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? 'text-[#c7372d] underline' : ''
+          }
+          to="/blog"
+        >
+          Blogs
+        </NavLink>
       </li>
       <li>
         <NavLink>Contact</NavLink>
