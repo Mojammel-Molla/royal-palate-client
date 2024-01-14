@@ -1,19 +1,38 @@
-import BlogImage from '../../assets/blog_image-1.jpg';
+import BlogPageImage from '../../assets/blog_image-1.jpg';
+import BlogPageBanner from '../../assets/blogpage-banner.jpeg';
 const BlogPage = () => {
   return (
-    <div className="max-w-5xl mx-auto my-5">
-      <div className="card  bg-base-100 shadow-xl">
+    <div className=" ">
+      <div
+        className="hero min-h-[40vh] md:mb-10"
+        style={{
+          backgroundImage: `url(${BlogPageBanner})`,
+        }}
+      >
+        {/* <div className="hero-overlay bg-opacity-60"></div> */}
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md">
+            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+          </div>
+        </div>
+      </div>
+      <div className="card max-w-5xl mx-auto my-5 bg-base-100 shadow-xl">
         <figure>
           <img
             className="h-[60vh] rounded-lg lg:w-full"
-            src={BlogImage}
+            src={BlogPageImage}
             alt="Burger"
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">
+          <h2 className="card-title md:text-4xl font-bold">
             FROM DRIVE-THRUS TO DELIGHTS: FAST FOOD STORIES
           </h2>
+          <div className="flex justify-start font-extrabold text-lg">
+            <p>Business</p>
+            <p>October 19, 2023</p>
+            <p>Comments</p>
+          </div>
           <p>
             In the heart of the bustling city, where hunger lurks around every
             corner, there exists a haven for burger enthusiasts – "Sizzling
@@ -48,7 +67,7 @@ const BlogPage = () => {
             an ode to the timeless allure of a perfectly crafted burger.
           </p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Listen</button>
+            <button className="underline">See More</button>
           </div>
         </div>
       </div>
